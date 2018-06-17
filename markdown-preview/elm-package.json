@@ -1,6 +1,7 @@
 {
     "version": "1.0.0",
-    "summary": "",
+    "summary": "markdown-preview",
+    "homepage": "/elm-sandbox/markdown-preview",
     "repository": "https://github.com/ahuglajbclajep/elm-sandbox.git",
     "license": "MIT",
     "source-directories": ["src"],
