@@ -30,26 +30,7 @@ update (NewContent content) _ =
 
 view : Model -> Html Msg
 view content =
-    div [ style container ]
-        [ textarea [ placeholder "Text to Markdown", onInput NewContent, style edit ] []
-        , Markdown.toHtml [ style preview ] content
+    div [ class "container" ]
+        [ textarea [ placeholder "Please input Markdown.", onInput NewContent, class "edit" ] []
+        , Markdown.toHtml [ class "preview" ] content
         ]
-
-
-container : List ( String, String )
-container =
-    [ ( "display", "flex" )
-    , ( "height", "100vh" )
-    ]
-
-
-preview : List ( String, String )
-preview =
-    [ ( "flex", "1" )
-    , ( "overflow-y", "scroll" )
-    ]
-
-
-edit : List ( String, String )
-edit =
-    preview ++ [ ( "resize", "none" ) ]
