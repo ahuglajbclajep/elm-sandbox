@@ -1,0 +1,1 @@
+:focus{outline:none}body{margin:0}.container{display:-webkit-box;display:-ms-flexbox;display:flex;height:100vh}.container>.edit{resize:none;border:0}.container>.edit,.container>.preview{-webkit-box-flex:1;-ms-flex:1;flex:1;overflow-y:scroll}.container>.preview{padding:2px}
